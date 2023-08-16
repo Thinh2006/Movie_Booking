@@ -1,0 +1,53 @@
+.Chair {
+    border-radius: 6px;
+    border: 1px solid orange;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+
+    &:hover {
+        cursor: pointer;
+        background-color: red;
+    }
+
+    &.borderless {
+        border: transparent;
+        pointer-events: none;
+        color: red;
+        font-weight: bold;
+        background-color: transparent;
+    }
+
+    &.booking {
+        background-color: red;
+    }
+
+    &.booked {
+        background-color: gray;
+    }
+}
+
+.Moviebooking {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 100vh;
+
+    .overlay {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        background-color: rgba(0,0,0,.5);
+        
+    }
+
+    .row{
+        position: relative;
+    }
+}
